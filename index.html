@@ -8,43 +8,42 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+	<link rel="stylesheet" type="text/css" href="CSS/animate.css">
 </head>
 <body>
 	<header class="header">
 		<div class="container">
-			<img src="IMG/logo.png" alt="logo" class="logo">
+			<img src="IMG/logo.png" alt="logo" class="logo animate__animated animate__fadeInDown">
 			<div class="wrapper">
-				<div class="offer">
-					<div class="title">
-						<h1 class="h1">
+				<div class="offer animate__animated animate__fadeInLeft">
+					<h1 class="title">
 							С помощью верстки<br>я создам ту жизнь, о которой
 							<span>мечтаю!</span>
-						</h1>
-					</div>
+					</h1>					
 					<p class="intro">
 						Мои стремления + настойчивость позволят мне достичь чего угодно. Я не верю в это. Я знаю это на 100%. Меня не остановить!
 					</p>
-					<a href="#" class="btn">Двигаться к мечте!</a>
+					<a href="#" class="btn" id="btn">Двигаться к мечте!</a>
 				</div>
-				<img src="IMG/desktop.png" alt="Code desktop" class="desktop">
+				<img src="IMG/desktop.png" alt="Code desktop" class="desktop animate__animated animate__fadeInRight">
 			</div>
 		</div>
 	</header>
-	<section class="learn">
+	<section class="learn" id="learn">
 		<div class="container">
-			<h2 class="title1">Что меня ждет впереди</h2>
+			<h2 class="title1 animate__animated">Что меня ждет впереди</h2>
 			<div class="skills">
-				<div class="skill">
+				<div class="skill animate__animated" id="skill">
 					<img src="IMG/icon1.png" alt="icon1" class="icon">
 					<h3 class="skill-title">Свободное время</h3>
 					<p class="skill-text">Мне нужно свободное время на семью<br>и самое настоящее</p>
 				</div>
-				<div class="skill">
+				<div class="skill animate__animated" id="skill1">
 					<img src="IMG/icon2.png" alt="icon2" class="icon">
 					<h3 class="skill-title">Яркие путешествия</h3>
 					<p class="skill-text">Работать откуда угодно - что может быть лучше?</p>
 				</div>
-				<div class="skill">
+				<div class="skill animate__animated" id="skill2">
 					<img src="IMG/icon3.png" alt="icon3" class="icon">
 					<h3 class="skill-title">Создание ценности</h3>
 					<p class="skill-text">Нет ничего сильнее, чем жить не<br>просто так, создавая ценность</p>
@@ -60,7 +59,7 @@
 				<input type="email" placeholder="E-mall" name="email" class="input" required>
 				<input type="tel" placeholder="Телефон" name="tel" class="input" required>
 				<input type="text" placeholder="Куда я полечу в ближайшее время?" name="text" class="input" required>
-				<button type="submit" class="mail-btn">Двигаться к мечте!</button>
+				<button type="submit" class="mail-btn" id="mail-btn">Двигаться к мечте!</button>
 			</form>
 		</div>
 	</section>
@@ -69,5 +68,7 @@
 			<p class="footer-text">© Все мои мечты защищены моим трудолюбием</p>
 		</div>
 	</footer>
+	<script src="JS/jquery-3.6.0.min.js"></script>
+	<script src="JS/main.js"></script>
 </body>
 </html>
