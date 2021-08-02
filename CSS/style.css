@@ -4,6 +4,7 @@ body {
 	font-size: 15px;
 	padding: 0;
 	margin: 0; 
+	overflow-x: hidden;
 }
 div, p, input, button, form, span, a, ul, li {
 	box-sizing: border-box;
@@ -37,7 +38,7 @@ h1, h2, h3, h4, h5, h6 {
 	width: 620px;
 	
 }
-.h1 {
+.title {
 	margin-top: 140px;
 	font-size: 37px;
 	margin-bottom: 40px; 
@@ -46,6 +47,12 @@ h1, h2, h3, h4, h5, h6 {
 	font-size: 16px;
 	width: 400px; 
 	margin-bottom: 40px;
+}
+.red {
+	color: red; 
+}
+.animate__animated {
+	opacity: 0;
 }
 span{
 	font-size: 59px;
@@ -56,7 +63,8 @@ span{
 	background: #ffd429; 
 	display: block;
 	width: 220px; 
-	padding: 20px 0; 
+	padding: 20px 0;
+	margin-bottom: 220px; 
 	text-align: center; 
 	text-decoration: none;
 	transition: all 0.5s ease; 
